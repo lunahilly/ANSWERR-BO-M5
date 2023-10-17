@@ -74,8 +74,4 @@
     </main>
 </body>
 
-<footer>
-        @ANSWERR
-</footer>
-
 </html>
