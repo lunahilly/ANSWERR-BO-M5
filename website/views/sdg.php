@@ -1,3 +1,5 @@
-<a href="">
-    <img src="" alt="" class="sdg">
-</a>
+<div>
+    <a href=""> <!-- link naar sdg pagina -->
+        <img src="" alt="random sdg, dit nog met php">
+    </a>
+</div>
