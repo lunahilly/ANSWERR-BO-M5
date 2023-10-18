@@ -1,25 +1,27 @@
-version: '3.5'
+version: '3.9'
 
 # Services
 services:
 
   # PHP FPM Service
   php:
-    container_name: php3
     build:
       dockerfile: ./docker/php/dockerfile
       context: .
+    environment:
+      SSMTP_MAILHUB: mailhog:1025
+      PHP_SENDMAIL_PATH: '"/usr/bin/dos2unix -u | /usr/sbin/ssmtp -t -f"'
     volumes:
       - './:/var/www/html'
     depends_on:
       - mariadb
+      - mailhog
 
   # Nginx Service
   nginx:
-    container_name: web3
     image: nginx:latest
     ports:
-      - 5500:80
+      - 8080:80
     links:
       - 'php'
     volumes:
@@ -30,19 +32,25 @@ services:
 
   # MariaDB Service
   mariadb:
-    container_name: db3
     image: mariadb:latest
     environment:
-      MYSQL_DATABASE: vleermuis
-      MYSQL_USER: vleermuis_user
+      MYSQL_DATABASE: ANSWERR_database
+      MYSQL_USER: root
       MYSQL_PASSWORD: mijn_p@ss#
-      MYSQL_ROOT_PASSWORD: CHICKENCHICKEN123
+      MYSQL_ROOT_PASSWORD: 4dy5qwtrsag#!sad
     ports:
-      - 3307:3306
+      - 3309:3306
     volumes:
       - './docker/mysqldata:/var/lib/mysql'
 
-    # php myadmin in an external image
+  # mailhog
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - 1025:1025
+      - 8025:8025
+
+  # php myadmin in an external image
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
