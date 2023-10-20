@@ -35,3 +35,4 @@ $RECYCLE.BIN/
 ### Application
 docker/mysqldata
 public/phpMyAdmin/tmp
+source/.env
