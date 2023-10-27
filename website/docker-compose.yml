@@ -58,7 +58,7 @@ services:
       PMA_USER: root
       PMA_PASSWORD: mijn_p@ss#
     ports:
-      - "8088:80"
+      - "5500:80"
 
 # Volumes
 volumes:
