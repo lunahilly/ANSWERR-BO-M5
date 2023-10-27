@@ -11,5 +11,5 @@
         <!-- wil je meer weten over alle SDG's? speel nu het spel! -->
         <!-- maak kennis met alle SDG's, speel de SDG game nu! -->
     </p>
-    <button class="cta">Play the game</button>  <!-- CTA button -->
+    <button class="cta">PLAY THE GAME!</button>  <!-- CTA button -->
 </article>

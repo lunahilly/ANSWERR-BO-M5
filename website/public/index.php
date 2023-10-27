@@ -30,23 +30,23 @@
         ?>
 
         <article class="alle_sdgs">  <!-- alle sdgs om op te klikken hier -->
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
-            <img src="" alt="" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
+            <img src="" alt="sdg" class="sdg">
         </article>
 
     </main>
