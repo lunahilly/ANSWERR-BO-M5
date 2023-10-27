@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/c47146fe67.js" crossorigin="anonymous"></script>
     <title>NVVN-SDG</title>
+    
 </head>
 
 <body>
@@ -48,8 +50,10 @@
             <img src="" alt="sdg" class="sdg">
             <img src="" alt="sdg" class="sdg">
         </article>
-
     </main>
+    <?php
+    include("../views/footer.php");
+    ?>
 </body>
 
 </html>
