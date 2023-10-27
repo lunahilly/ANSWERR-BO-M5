@@ -19,12 +19,21 @@
 
     <main>
         <div class="highlight">  <!-- de gehighlighte sdgs, moet nog met php -->
-        
-            <?php
-                include("../views/sdg.php");
-                include("../views/sdg.php");
-                include("../views/sdg.php");
-            ?>
+            <div class="hide">
+                <?php
+                    include("../views/sdg.php");
+                ?>
+            </div>
+            <div>
+                <?php
+                    include("../views/sdg.php");
+                ?>
+            </div>
+            <div class="hide">
+                <?php
+                    include("../views/sdg.php");
+                ?>
+            </div>
         </div>
 
         <?php
@@ -32,23 +41,23 @@
         ?>
 
         <article class="alle_sdgs">  <!-- alle sdgs om op te klikken hier -->
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
-            <img src="" alt="sdg" class="sdg">
+            <img src="/img/sdg1.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg2.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg3.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg4.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg5.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg6.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg7.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg8.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg9.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg10.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg11.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg12.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg13.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg14.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg15.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg16.webp" alt="sdg" class="sdg">
+            <img src="/img/sdg17.webp" alt="sdg" class="sdg">
         </article>
     </main>
     <?php
