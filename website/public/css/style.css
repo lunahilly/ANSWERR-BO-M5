@@ -111,16 +111,19 @@ h2{
 }
 
 .sdg{
-    max-width: 30vh;
-    max-height: 30vh;
+    width: 25vh;
+    height: 25vh;
     background: blue;
-    display: grid;
-    transition-duration: 0.2s;
+    overflow: hidden;
+    display: inline-block;
+    transition-duration: 1s;
 }
 
-.sdg > img:hover{
+.sdg:hover{
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    overflow: hidden;
 }
 
 footer{
