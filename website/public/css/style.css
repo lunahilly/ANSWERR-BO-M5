@@ -43,14 +43,14 @@ nav > ul > li{
     align-items: center;
     height: 50px;
     justify-content: center;
-
+    transform: translateY(10%);
     text-align: center;
     
 }
 
 nav > ul > li > img{
     width: 300px;
-
+    transform: translateY(-10%);
 }
 
 .highlight{
@@ -78,6 +78,7 @@ nav > ul > li > img{
 
     padding: 80px;
     padding-top: 0;
+    padding-bottom: 40px;
 }
 
 h2{
@@ -93,7 +94,7 @@ h2{
     border: 3px solid black;
     justify-self: flex-end;
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 200px;
 
     align-self: flex-end ;
@@ -113,6 +114,13 @@ h2{
     max-width: 30vh;
     max-height: 30vh;
     background: blue;
+    display: grid;
+    transition-duration: 0.2s;
+}
+
+.sdg > img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
 }
 
 footer{
@@ -133,7 +141,7 @@ footer > div{
     font-size: 100px;
 }
 
-footer > img{
+footer > a> img{
     max-height: 50px;
 }
 
@@ -144,8 +152,8 @@ footer > img{
     }
 
     .highlight > div > div> a > img{
-        min-width: 40vw;
-        min-height: 40vw;
+        min-width: 30vw;
+        min-height: 30vw;
     }
     .highlight{
         max-height: 50vw;
