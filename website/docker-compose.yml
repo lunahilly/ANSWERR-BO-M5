@@ -8,14 +8,10 @@ services:
     build:
       dockerfile: ./docker/php/dockerfile
       context: .
-    environment:
-      SSMTP_MAILHUB: mailhog:1025
-      PHP_SENDMAIL_PATH: '"/usr/bin/dos2unix -u | /usr/sbin/ssmtp -t -f"'
     volumes:
       - './:/var/www/html'
     depends_on:
       - mariadb
-      - mailhog
 
   # Nginx Service
   nginx:
@@ -35,31 +31,14 @@ services:
     image: mariadb:latest
     environment:
       MYSQL_DATABASE: ANSWERR_database
-      MYSQL_USER: root
-      MYSQL_PASSWORD: mijn_p@ss#
+      MYSQL_USER: kookie
+      MYSQL_PASSWORD: bah_p@ss#
       MYSQL_ROOT_PASSWORD: 4dy5qwtrsag#!sad
     ports:
       - 3309:3306
     volumes:
       - './docker/mysqldata:/var/lib/mysql'
-
-  # mailhog
-  mailhog:
-    image: mailhog/mailhog:latest
-    ports:
-      - 1025:1025
-      - 8025:8025
-
-  # php myadmin in an external image
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    environment:
-      PMA_HOST: mariadb
-      PMA_USER: root
-      PMA_PASSWORD: mijn_p@ss#
-    ports:
-      - "5500:80"
-
+      
 # Volumes
 volumes:
   mysqldata:

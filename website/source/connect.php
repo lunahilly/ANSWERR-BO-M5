@@ -1,17 +1,17 @@
 <?php
 function db_connect() {
     $envSettings = [];
-    if (file_exists(dirname(FILE).'/.env')) {
-        $envSettings = parse_ini_file(dirname(FILE).'/.env');
+    if (file_exists('../source/.env')) {
+        $envSettings = parse_ini_file('../source/.env');
 
+        $conn = mysqli_connect($envSettings["DB_NAME"], $envSettings["DB_USER"], $envSettings["DB_PASSWORD"], $envSettings["DB_HOST"]);
 
-$servername=$envSettings["DB_NAME"];
-$username= $envSettings["DB_USER"];
-$password= $envSettings["DB_PASSWORD"];
-$dbname= $envSettings["DB_HOST"];
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+        }
 
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
+        return $conn;
+        mysqli_close();
     }
-
-    return $conn;
 }
+

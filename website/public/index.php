@@ -1,3 +1,7 @@
+<?php
+include_once("../source/connect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,27 +17,17 @@
 <body>
     <!-- wat er in de nav staat moeten we nog bedenken -->
     <?php
-    include("../views/nav.php");
+        include("../views/nav.php");
     ?>
 
 
     <main>
         <div class="highlight">  <!-- de gehighlighte sdgs, moet nog met php -->
             <div class="hide">
+                
                 <?php
                     include("../views/sdg.php");
                 ?>
-            </div>
-            <div>
-                <?php
-                    include("../views/sdg.php");
-                ?>
-            </div>
-            <div class="hide">
-                <?php
-                    include("../views/sdg.php");
-                ?>
-            </div>
         </div>
 
         <?php

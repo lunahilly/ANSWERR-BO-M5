@@ -1,5 +1,3 @@
-
-
 <article class="about">
     <h2>Wat zijn SDG's?</h2>  <!-- informatie over wat SDG's zijn + CTA button -->
     <p>
