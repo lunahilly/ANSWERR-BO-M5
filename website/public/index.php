@@ -22,12 +22,12 @@ include_once("../source/connect.php");
 
 
     <main>
-        <div class="highlight">  <!-- de gehighlighte sdgs, moet nog met php -->
-            <div class="hide">
-                
-                <?php
-                    include("../views/sdg.php");
-                ?>
+        <div class="main">
+            <div class="highlight">  <!-- de gehighlighte sdgs, moet nog met php -->    
+                    <?php
+                        include("../views/sdg.php");
+                    ?>
+            </div>
         </div>
 
         <?php
