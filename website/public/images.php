@@ -12,10 +12,15 @@ $info_texts = [];
 $image_paths = [];
 
 while ($row = mysqli_fetch_assoc($result)) {
+  $id = $row['id'];
   $titles = $row['title'];
   $subtexts = $row['subtext'];
   $info_texts = $row['info_text'];
   $image_paths = $row['image_path'];
 }
 
-echo '<img src="'.$image_paths.'">';
+
+
+echo '<a >
+        <img src="'.$image_paths.'" >
+      <?a>';
