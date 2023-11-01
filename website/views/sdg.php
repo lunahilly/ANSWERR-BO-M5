@@ -11,22 +11,32 @@ for ($i = 0; $i < 3; $i++){
     $sdgNummer = $nummerlijst[$i];
 
     // Aanpassing: Haal de afbeelding op uit de database
-    $sql = "SELECT image_path FROM sdg_cards WHERE id = $sdgNummer";
+    $sql = "SELECT * FROM sdg_cards WHERE id = $sdgNummer";
     $result = mysqli_query($connectie, $sql);
+
+while ($row = mysqli_fetch_assoc($result)){
+
+    $id = $row['id'];
+    $titles = $row['title'];
+    $subtexts = $row['subtext'];
+    $info_texts = $row['info_text'];
+    $image_paths = $row['image_path'];
 
     if ($result) {
         $row = mysqli_fetch_assoc($result);
-        $image_path = $row['image_path'];
 
-        echo "
-        <figure class='groot-sdg'>
-            <img class='groot-sdg_img' src='$image_path' alt='SDG Image $sdgNummer'>
-        </figure>";
+        $template = "./views/themplate.php";
 
+        echo '
+        <figure class="groot-sdg">
+            <a href="'.$template .'?sdg='. $id .'">
+            <img class="groot-sdg_img" src="./'.$image_paths.'" alt="SDG Image $sdgNummer">
+            </a>
+        </figure>';
+    }
 
-        mysqli_free_result($result);
-
-    } else {
+    
+    else {
         echo "Fout bij het uitvoeren van de databasequery.";
     }
-}
+}}
