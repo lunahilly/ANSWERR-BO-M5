@@ -35,23 +35,9 @@ include_once("../source/connect.php");
         ?>
 
         <article class="alle_sdgs">  <!-- alle sdgs om op te klikken hier -->
-            <a href=""><img src="/img/sdg1.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg2.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg3.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg4.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg5.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg6.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg7.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg8.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg9.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg10.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg11.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg12.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg13.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg14.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg15.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg16.webp" alt="sdg" class="sdg"></a>
-            <a href=""><img src="/img/sdg17.webp" alt="sdg" class="sdg"></a>
+            <?php
+                include ("../views/allSDG.php");
+            ?>
         </article>
     </main>
     <?php

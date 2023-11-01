@@ -18,13 +18,12 @@ for ($i = 0; $i < 3; $i++){
         $row = mysqli_fetch_assoc($result);
         $image_path = $row['image_path'];
 
-        // Nu kun je $image_path gebruiken om de afbeelding te tonen of te verwerken
         echo "
         <figure class='groot-sdg'>
             <img class='groot-sdg_img' src='$image_path' alt='SDG Image $sdgNummer'>
         </figure>";
 
-        // Optioneel: Sluit de query result set
+
         mysqli_free_result($result);
 
     } else {
