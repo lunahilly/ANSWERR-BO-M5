@@ -18,7 +18,10 @@ while ($row = mysqli_fetch_assoc($result)){
     $image_path = $row['image_path']; 
     echo '
     <figure class="groot-sdg">
-        <img class="groot-sdg_img" src= ' . $image_path .' "alt="SDG Image" ' . $sdgNummer . '>
-    </figure>';
-};
+            <a href="'.$template .'?sdg='. $id .'">
+            <img class="groot-sdg_img" src= ' . $image_path .' "alt="SDG Image" ' . $sdgNummer . '>
+            </a>
+        </figure>';
 }
+}
+
