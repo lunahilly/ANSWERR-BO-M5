@@ -57,6 +57,7 @@ nav > ul > li{
 nav > ul > li > A >img{
     width: 300px;
     transform: translateY(-10%);
+    border: none;
 }
 
 nav > ul > li > a{
