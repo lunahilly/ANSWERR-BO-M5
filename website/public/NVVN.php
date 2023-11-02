@@ -19,8 +19,6 @@ include_once("../source/connect.php");
     <?php
         include("../views/nav.php");
     ?>
-
-
     <main>
         <?php
             include("../views/AboutSDG.php");
