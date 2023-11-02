@@ -254,3 +254,306 @@ footer > a> img{
         font-size: 18px;
     }
 }
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 1rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "img text";
+}
+
+.img { 
+	grid-area: img;
+ 	margin: 1rem;
+}
+
+img {
+	width: 46rem;
+	border: 0.5rem solid #000;
+}
+
+.text { 
+	grid-area: text; 
+	margin: 1rem;
+}
+
+  @media screen and (max-width: 680px) {
+.container {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "img" "text";
+}
+
+.img { 
+	grid-area: img; 
+}
+
+img {
+	width: 100%;
+}
+
+.text { 
+	grid-area: text; 
+	margin: 0 0 0 1rem;
+}
+
+   }
+
+
+
+
+
+
+
+
+
+
+   
+
+   :root {
+    --background: rgb(229, 234, 219);
+    --nav: #b2dfdb;
+    --nvvn: #278fd1;
+}
+
+
+*,::before, ::after{
+    padding: 0;
+    font-size: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100%;
+    background: var(--background);
+}
+
+nav{
+    width: 100%;
+    background: var(--nav);
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border: 3px solid black;
+
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    align-items: center;
+
+}
+
+nav > ul > li{
+    font-size: 30px;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    transform: translateY(10%);
+    text-align: center;
+    
+}
+
+nav > ul > li > img{
+    width: 300px;
+    transform: translateY(-10%);
+}
+
+.highlight{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.highlight > div > div> a > img{
+    max-width: 30vw;
+    max-height: 30vh;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.about{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    padding: 80px;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.cta{
+    background: #71cc90;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid black;
+    justify-self: flex-end;
+    display: flex;
+    margin-top: 20px;
+    width: 200px;
+
+    align-self: flex-end ;
+}
+
+.alle_sdgs{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.sdg{
+    width: 25vh;
+    height: 25vh;
+    background: blue;
+    overflow: hidden;
+    display: inline-block;
+    transition-duration: 1s;
+}
+
+.sdg:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    overflow: hidden;
+}
+
+footer{
+    height: 50px;
+    background: var(--nvvn);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > div{
+    max-height: 100%;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 100px;
+}
+
+footer > a> img{
+    max-height: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        font-size: 18px;
+        width: 100vw;
+    }
+
+    .highlight > div > div> a > img{
+        min-width: 30vw;
+        min-height: 30vw;
+    }
+    .highlight{
+        max-height: 50vw;
+    }
+
+    nav{
+        width: 100vw;
+    }
+
+    .about, p{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    footer > div{
+        width: 50%;
+    }
+    footer > img{
+        height: 80%;
+
+    }
+
+    .sdg{
+        max-width: 30vw;
+        max-height: 30vw;
+    }
+    
+    .menu{
+        display: none;
+    }
+    
+    .fa-solid, ::after, ::before{
+        display: block;
+    }
+
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 16px;
+    }
+
+    .about, p{
+        font-size: 16px;
+    }
+
+    
+    h2{
+        font-size: 18px;
+    }
+}
