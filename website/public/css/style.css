@@ -4,7 +4,9 @@
     --nvvn: #278fd1;
 }
 
-*,::before, ::after{
+*,
+::before,
+::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,19 +14,19 @@
     scroll-behavior: smooth;
 }
 
-html{
+html {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     max-width: 100vw;
     height: 100%;
     background: var(--background);
     font-family: sans-serif;
 }
 
-nav{
+nav {
     width: 100%;
     background: var(--nav);
     justify-content: center;
@@ -34,7 +36,7 @@ nav{
 
 }
 
-nav > ul{
+nav>ul {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -44,23 +46,23 @@ nav > ul{
 
 }
 
-nav > ul > li{
+nav>ul>li {
     font-size: 30px;
     align-items: center;
     height: 50px;
     justify-content: center;
     transform: translateY(10%);
     text-align: center;
-    
+
 }
 
-nav > ul > li > A >img{
+nav>ul>li>A>img {
     width: 300px;
     transform: translateY(-10%);
     border: none;
 }
 
-nav > ul > li > a{
+nav>ul>li>a {
     color: black;
     width: 100%;
     height: 100%;
@@ -69,12 +71,12 @@ nav > ul > li > a{
 }
 
 
-.groot-sdg{
+.groot-sdg {
     width: 14rem;
     height: 14rem;
 }
 
-.groot-sdg_img{
+.groot-sdg_img {
     width: 100%;
     height: 100%;
 }
@@ -83,10 +85,10 @@ nav > ul > li > a{
     padding: 2rem;
 }
 
-.highlight{
+.highlight {
     min-width: 100%;
     height: auto;
-    
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -96,14 +98,14 @@ nav > ul > li > a{
 }
 
 
-.highlight > div > div> a > img{
+.highlight>div>div>a>img {
     max-width: 30vw;
     max-height: 30vh;
     border: 5px solid black;
     border-radius: 20px;
 }
 
-.about{
+.about {
     width: 100%;
     justify-content: center;
     display: flex;
@@ -114,13 +116,13 @@ nav > ul > li > a{
     padding-bottom: 40px;
 }
 
-h2{
+h2 {
     font-size: 25px;
     margin-bottom: 20px;
 
 }
 
-.cta{
+.cta {
     background: #71cc90;
     padding: 10px;
     border-radius: 20px;
@@ -129,17 +131,17 @@ h2{
     display: flex;
     margin-top: 20px;
     width: 200px;
-    align-self: flex-end ;
+    align-self: flex-end;
 }
 
-.cta > a{
+.cta>a {
     text-decoration: none;
     color: black;
     width: 100%;
     height: 100%;
 }
 
-.alle_sdgs{
+.alle_sdgs {
     height: 100%;
     width: 100%;
     gap: 10px;
@@ -150,7 +152,7 @@ h2{
     margin-bottom: 20px;
 }
 
-.sdg{
+.sdg {
     width: 25vh;
     height: 25vh;
     background: blue;
@@ -159,14 +161,14 @@ h2{
     transition-duration: 1s;
 }
 
-.sdg:hover{
+.sdg:hover {
     cursor: pointer;
     transform: scale(1.1);
-    -webkit-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
     overflow: hidden;
 }
 
-footer{
+footer {
     background: var(--nvvn);
     margin: 0;
     display: flex;
@@ -174,7 +176,7 @@ footer{
     align-items: center;
 }
 
-footer > div{
+footer>div {
     height: 100%;
     width: 20vw;
     display: flex;
@@ -184,328 +186,146 @@ footer > div{
     font-size: 100px;
 }
 
-footer > a> img{
+footer>a>img {
     height: 50px;
 }
 
-.logos{
+.logos {
     display: flex;
     height: 100%;
     align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
-    body{
+    body {
         font-size: 18px;
         width: 100vw;
     }
 
-    .highlight > div > div> a > img{
+    .highlight>div>div>a>img {
         min-width: 30vw;
         min-height: 30vw;
     }
 
 
-    nav{
+    nav {
         width: 100vw;
     }
 
-    .about, p{
+    .about,
+    p {
         font-size: 18px;
     }
 
-    h2{
+    h2 {
         font-size: 20px;
     }
 
-    footer > div{
+    footer>div {
         width: 50%;
     }
-    footer > img{
+
+    footer>img {
         height: 80%;
 
     }
 
-    .sdg{
+    .sdg {
         max-width: 30vw;
         max-height: 30vw;
     }
-    
-    .menu{
+
+    .menu {
         display: none;
     }
-    
-    .fa-solid, ::after, ::before{
+
+    .fa-solid,
+    ::after,
+    ::before {
         display: block;
     }
 }
 
-@media screen and (max-width: 600px){
-    body{
+@media screen and (max-width: 600px) {
+    body {
         font-size: 16px;
     }
 
 
-    .about, p{
+    .about,
+    p {
         font-size: 16px;
     }
 
-    
-    h2{
+
+    h2 {
         font-size: 18px;
     }
 }
 
 
 h1 {
-	font-size: 3rem;
-	margin: 1rem;
+    font-size: 3rem;
+    margin: 1rem;
 }
 
 h2 {
-	font-size: 2rem;
+    font-size: 2rem;
 }
 
 p {
-	margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
-.container {  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "img text";
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "img text";
 }
 
-.img { 
-	grid-area: img;
- 	margin: 1rem;
-}
-
-img {
-	width: 46rem;
-	border: 0.5rem solid #000;
-}
-
-.text { 
-	grid-area: text; 
-	margin: 1rem;
-}
-
-  @media screen and (max-width: 680px) {
-.container {  
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "img" "text";
-}
-
-.img { 
-	grid-area: img; 
+.img {
+    grid-area: img;
+    margin: 1rem;
 }
 
 img {
-	width: 100%;
+    width: 46rem;
+    border: 0.5rem solid #000;
 }
 
-.text { 
-	grid-area: text; 
-	margin: 0 0 0 1rem;
+.text {
+    grid-area: text;
+    margin: 1rem;
 }
 
-   }
+@media screen and (max-width: 680px) {
 
 
-
-
-
-
-
-
-
-
-   
-
-   :root {
-    --background: rgb(229, 234, 219);
-    --nav: #b2dfdb;
-    --nvvn: #278fd1;
-}
-
-
-*,::before, ::after{
-    padding: 0;
-    font-size: 20px;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
-.highlight{
-    height: 40vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-}
-
-.highlight > div > div> a > img{
-    max-width: 30vw;
-    max-height: 30vh;
-    border: 5px solid black;
-    border-radius: 20px;
-}
-
-.about{
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-
-    padding: 80px;
-    padding-top: 0;
-    padding-bottom: 40px;
-}
-
-h2{
-    font-size: 25px;
-    margin-bottom: 20px;
-
-}
-
-.cta{
-    background: #71cc90;
-    padding: 10px;
-    border-radius: 20px;
-    border: 3px solid black;
-    justify-self: flex-end;
-    display: flex;
-    margin-top: 20px;
-    width: 200px;
-
-    align-self: flex-end ;
-}
-
-.alle_sdgs{
-    width: 100%;
-    gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.sdg{
-    width: 25vh;
-    height: 25vh;
-    background: blue;
-    overflow: hidden;
-    display: inline-block;
-    transition-duration: 1s;
-}
-
-.sdg:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1); 
-    overflow: hidden;
-}
-
-footer{
-    height: 50px;
-    background: var(--nvvn);
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer > div{
-    max-height: 100%;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-size: 100px;
-}
-
-footer > a> img{
-    max-height: 50px;
-}
-
-@media screen and (max-width: 1000px) {
-    body{
-        font-size: 18px;
-        width: 100vw;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "img" "text";
     }
 
-    .highlight > div > div> a > img{
-        min-width: 30vw;
-        min-height: 30vw;
-    }
-    .highlight{
-        max-height: 50vw;
+    .img {
+        grid-area: img;
     }
 
-    nav{
-        width: 100vw;
+    img {
+        width: 100%;
     }
 
-    .about, p{
-        font-size: 18px;
+    .text {
+        grid-area: text;
+        margin: 0 0 0 1rem;
     }
 
-    h2{
-        font-size: 20px;
-    }
-
-    footer > div{
-        width: 50%;
-    }
-    footer > img{
-        height: 80%;
-
-    }
-
-    .sdg{
-        max-width: 30vw;
-        max-height: 30vw;
-    }
-    
-    .menu{
-        display: none;
-    }
-    
-    .fa-solid, ::after, ::before{
-        display: block;
-    }
-
-    .hide{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px){
-    body{
-        font-size: 16px;
-    }
-
-    .about, p{
-        font-size: 16px;
-    }
-
-    
-    h2{
-        font-size: 18px;
-    }
 }
