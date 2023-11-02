@@ -188,6 +188,8 @@ footer>div {
 
 footer>a>img {
     height: 50px;
+    border: none;
+    width: auto;
 }
 
 .logos {
@@ -225,7 +227,7 @@ footer>a>img {
         width: 50%;
     }
 
-    footer>img {
+    footer> a>img {
         height: 80%;
 
     }
