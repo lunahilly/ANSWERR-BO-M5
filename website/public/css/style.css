@@ -166,12 +166,11 @@ h2{
 }
 
 footer{
-    height: 50px;
     background: var(--nvvn);
     margin: 0;
     display: flex;
     justify-content: space-between;
-    vertical-align: top
+    align-items: center;
 }
 
 footer > div{
@@ -186,6 +185,12 @@ footer > div{
 
 footer > a> img{
     height: 50px;
+}
+
+.logos{
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
