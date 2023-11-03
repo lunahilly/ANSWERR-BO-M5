@@ -1,0 +1,31 @@
+main{
+height: 84.3vh;
+}
+
+.SDG{
+    width: 100%;
+    padding: 0 10rem;
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .SDG img{
+    width: 30vw;
+    height: 30vw;
+    margin: 2rem;
+  }
+  
+  .SDG-description{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .SDG-description h1{
+    font-size: 2rem;
+    
+  }
+  
+  .SGD-description p{
+    font-size: 2rem;
+  }

@@ -10,7 +10,6 @@ $connectie = db_connect();
 for ($i = 0; $i < 3; $i++){
     $sdgNummer = $nummerlijst[$i];
 
-    // Aanpassing: Haal de afbeelding op uit de database
     $sql = "SELECT * FROM sdg_cards WHERE id = $sdgNummer";
     $result = mysqli_query($connectie, $sql);
 
@@ -25,14 +24,21 @@ while ($row = mysqli_fetch_assoc($result)){
     if ($result) {
         $row = mysqli_fetch_assoc($result);
 
-        $template = "./views/themplate.php";
+        $template = "SDGpage.php";
+
+        if($id > 6 AND $id <=11){
+            $template = "SDGpage2.php";
+        }
+
+        if($id > 11){
+            $template = "SDGpage3.php";
+        }
 
         echo '
-        <figure class="groot-sdg">
-            <a href="'.$template .'?sdg='. $id .'">
+
+        <a class="groot-sdg" href="'.$template .'?sdg='. $id .'">
             <img class="groot-sdg_img" src="./'.$image_paths.'" alt="SDG Image $sdgNummer">
-            </a>
-        </figure>';
+        </a>';
     }
 
     
