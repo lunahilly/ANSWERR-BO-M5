@@ -29,11 +29,13 @@ include_once("../source/connect.php");
                     ?>
             </div>
         </div>
-
-        <?php
-            include("../views/AboutSDG.php");
-        ?>
-
+        <div id="about">
+            <div>
+                <?php
+                    include("../views/AboutSDG.php");
+                ?>
+            </div>
+        </div>
         <article class="alle_sdgs">  <!-- alle sdgs om op te klikken hier -->
             <?php
                 include ("../views/allSDG.php");
