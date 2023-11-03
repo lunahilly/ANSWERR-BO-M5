@@ -11,5 +11,7 @@ function db_connect() {
         }
 
         return $conn;
+    } else {
+        echo "no .env";
     }
 }

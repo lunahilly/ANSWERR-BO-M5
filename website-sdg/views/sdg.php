@@ -10,10 +10,9 @@ $connectie = db_connect();
 for ($i = 0; $i < 3; $i++){
     $sdgNummer = $nummerlijst[$i];
 
-    $sql = "SELECT * FROM sdg_cards WHERE id = $sdgNummer";
-    $result = mysqli_query($connectie, $sql);
+    $result = $connectie->query("SELECT * FROM sdg_cards WHERE id = $sdgNummer");
 
-while ($row = mysqli_fetch_assoc($result)){
+while ($row = $result->fetch_assoc()){
 
     $id = $row['id'];
     $titles = $row['title'];
