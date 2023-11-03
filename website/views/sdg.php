@@ -13,16 +13,14 @@ for ($i = 0; $i < 3; $i++){
     $sql = "SELECT * FROM sdg_cards WHERE id = $sdgNummer";
     $result = mysqli_query($connectie, $sql);
 
-while ($row = mysqli_fetch_assoc($result)){
-
-    $id = $row['id'];
-    $titles = $row['title'];
-    $subtexts = $row['subtext'];
-    $info_texts = $row['info_text'];
-    $image_paths = $row['image_path'];
-
     if ($result) {
         $row = mysqli_fetch_assoc($result);
+
+        $id = $row['id'];
+        $titles = $row['title'];
+        $subtexts = $row['subtext'];
+        $info_texts = $row['info_text'];
+        $image_paths = $row['image_path'];
 
         $template = "SDGpage.php";
 
@@ -40,9 +38,7 @@ while ($row = mysqli_fetch_assoc($result)){
             <img class="groot-sdg_img" src="./'.$image_paths.'" alt="SDG Image $sdgNummer">
         </a>';
     }
-
-    
     else {
         echo "Fout bij het uitvoeren van de databasequery.";
     }
-}}
+}

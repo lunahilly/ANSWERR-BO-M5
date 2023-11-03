@@ -5,15 +5,13 @@ function kutphp(){
     require_once("../source/connect.php");
     $connection = db_connect();
 
-    $sql = "SELECT * FROM sdg_cards WHERE id = ?";
-    $stmt = $connection->prepare($sql);
+    $stmt = $connection->prepare("SELECT * FROM sdg_cards WHERE id = ?");
+    $stmt->bind_param("i", $sdg);
+    $stmt->execute();
 
-    if ($stmt){
+    $result = $stmt->get_result();
 
-        $stmt->bind_param("i", $sdg);
-        $stmt->execute();
-
-        $result = $stmt->get_result();
+    if($result->num_rows > 0){
 
         while ($row = $result->fetch_assoc()){
     
@@ -24,20 +22,19 @@ function kutphp(){
             $image_paths = $row['image_path'];
 
         }
-
-        $stmt->close();
-    }   
-
+        echo'
+        <section class="SDG">
+            <img src="'.$image_paths.'" alt="SDG">
+            <article class="SDG-description">
+                <h1>'.$titles.'</h1>
+                <p>'.$info_texts.'</p>
+            </article>
+        </section>';
+    }
     else{
-        die("Error in SQL statement: " . $connection->error);
+        echo "No SDG found with id: " . $sdg;
     }
 
-    echo'
-    <section class="SDG">
-        <img src="'.$image_paths.'" alt="SDG">
-        <article class="SDG-description">
-            <h1>'.$titles.'</h1>
-            <p>'.$info_texts.'</p>
-        </article>
-    </section>';
-}
+    $stmt->close();
+    $connection->close();
+}      
