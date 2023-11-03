@@ -30,7 +30,7 @@ services:
   mariadb:
     image: mariadb:latest
     environment:
-      MYSQL_DATABASE: ANSWERR_database
+      MYSQL_DATABASE: answerr_database
       MYSQL_USER: kookie
       MYSQL_PASSWORD: bah_p@ss#
       MYSQL_ROOT_PASSWORD: 4dy5qwtrsag#!sad
@@ -39,6 +39,16 @@ services:
     volumes:
       - './docker/mysqldata:/var/lib/mysql'
       
+  # php myadmin in an external image
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: root
+      PMA_PASSWORD: 4dy5qwtrsag#!sad
+    ports:
+      - 8088:80
+
 # Volumes
 volumes:
   mysqldata:
