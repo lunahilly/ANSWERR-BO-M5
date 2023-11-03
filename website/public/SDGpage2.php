@@ -14,7 +14,7 @@
     <title>Document</title>   -->
 </head>
 <body>
-    
+
 
 
   <h1>SDG 1 titel uit db</h1>
@@ -26,9 +26,9 @@
   	<h2>Subkopje uit db</h2>
   	<p>Tekst uit db: Uitleg over lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 
-  	
+
   </div>
- 
+
 </body>
 </html>
 
@@ -41,4 +41,3 @@
 <?php
     include("../views/footer.php");
     ?>
-';}
