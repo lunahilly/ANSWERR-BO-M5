@@ -23,12 +23,14 @@ function kutphp(){
 
         }
     echo'
+    <div class="container__container">
     <h1 class="h1">'.$titles.'</h1>
     <div class="container">
           <img class="img" src="'.$image_paths.'" alt="SDG">
       <div class="text">
           <h2 class="container__h2">'.$subtexts.'</h2>
           <p class="container__p">'.$info_texts.'</p>
+      </div>
       </div>';
 }
     else{
