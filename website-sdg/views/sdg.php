@@ -34,7 +34,7 @@ for ($i = 0; $i < 3; $i++){
         echo '
 
         <a class="groot-sdg" href="'.$template .'?sdg='. $id .'">
-            <img class="groot-sdg_img" src="./'.$image_paths.'" alt="SDG Image $sdgNummer">
+            <img class="sdg__img groot-sdg_img" src="./'.$image_paths.'" alt="SDG Image $sdgNummer">
         </a>';
     }
     else {
