@@ -27,6 +27,7 @@ function kutphp(){
             <img class="img" src="'.$image_paths.'" alt="SDG">
             <article class="SDG-description">
                 <h1>'.$titles.'</h1>
+                <h4 class="container__h2">'.$subtexts.'</h4>
                 <p>'.$info_texts.'</p>
             </article>
         </section>';
