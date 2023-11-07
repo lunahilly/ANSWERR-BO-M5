@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/page3style.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/c47146fe67.js" crossorigin="anonymous"></script>
-    <title>SDG pagina 2</title>
+    <title>SDG pagina 3</title>
 </head>
 
 <body>

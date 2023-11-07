@@ -13,7 +13,7 @@ while ($row = mysqli_fetch_assoc($result)){
     echo '
     <figure class="groot-sdg">
             <a href="'.$template .'?sdg='. $id .'">
-            <img class="groot-sdg_img" src= ' . $image_path .' "alt="SDG Image" ' . $sdgNummer . '>
+            <img class="groot-sdg_img sdg" src= ' . $image_path .' "alt="SDG Image" ' . $sdgNummer . '>
             </a>
         </figure>';
 }

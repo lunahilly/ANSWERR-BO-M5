@@ -1,5 +1,6 @@
 <?php
-function kutphp(){
+function kutphp()
+{
     $sdg = $_GET['sdg'];
 
     require_once("../source/connect.php");
@@ -11,10 +12,10 @@ function kutphp(){
 
     $result = $stmt->get_result();
 
-    if($result->num_rows > 0){
+    if ($result->num_rows > 0) {
 
-        while ($row = $result->fetch_assoc()){
-    
+        while ($row = $result->fetch_assoc()) {
+
             $id = $row['id'];
             $titles = $row['title'];
             $subtexts = $row['subtext'];
@@ -22,21 +23,22 @@ function kutphp(){
             $image_paths = $row['image_path'];
 
         }
-    echo'
-    <h1>'.$titles.'</h1>
-    <div class="container">
-      <div class="img">
-          <img src="'.$image_paths.'" alt="SDG">
-      </div>
-      <div class="text">
-          <h2>'.$subtexts.'</h2>
-          <p>'.$info_texts.'</p>
-      </div>';
-}
-    else{
+        echo '
+            <h1>' . $titles . '</h1>
+            <div class="container1">
+          <div class="img1">
+               <img src="' . $image_paths . '" alt="foto"/>
+          </div>
+          <div class="text1">
+              <p>' . $info_texts . '</p>
+        
+        
+          </div>';
+    } 
+    else {
         echo "No SDG found with id: " . $sdg;
     }
 
-$stmt->close();
-$connection->close();
-}     
+    $stmt->close();
+    $connection->close();
+}

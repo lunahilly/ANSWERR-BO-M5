@@ -153,11 +153,6 @@ h2 {
 }
 
 .sdg {
-    width: 25vh;
-    height: 25vh;
-    background: blue;
-    overflow: hidden;
-    display: inline-block;
     transition-duration: 1s;
 }
 
@@ -174,6 +169,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 100vw;
+    max-width: 100vw;
 }
 
 footer>div {
