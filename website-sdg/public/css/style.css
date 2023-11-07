@@ -366,6 +366,42 @@ p {
     margin: 1rem;
 }
 
+.SDG{
+    width: 100%;
+    padding: 0 10rem;
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .SDG img{
+    width: 30vw;
+    height: 30vw;
+    margin: 2rem;
+  }
+  
+  .SDG-description{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .SDG-description h1{
+    font-size: 2rem;
+    
+  }
+  
+  .SGD-description p{
+    font-size: 2rem;
+  }
+
+@media screen and (max-width: 1200px) {
+    .SDG{
+        display: flex;
+        flex-direction: colum;
+    }
+  }
+
+
 @media screen and (max-width: 680px) {
 
 
@@ -404,7 +440,29 @@ p {
 
 /* sdg page 2 */
 
+@media screen and (max-width: 1000px) {
 
+    .body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .h1{
+        font-size: 40px;
+    }
+
+    .container__p{
+        font-size: 20px;
+    }
+
+    .container__h2{
+        font-size: 30px;
+    }
+
+    .img{
+        margin-bottom: 20px;
+    }
+}
 
 
 
@@ -423,6 +481,11 @@ p {
         flex-direction: column;
     }
 
+    .SDG{
+        display: flex;
+        flex-direction: column;
+    }
+
     .SDG__container{
         display: flex;
         flex-direction: column-reverse;
@@ -432,6 +495,11 @@ p {
     }
     .img{
         width: 40vw;
+    }
+
+    body{
+        height: 100vh;
+        width: 100vw;
     }
 }
 
@@ -464,5 +532,11 @@ p {
     }
     .fa-brands{
         font-size: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .SDG-description{
+        width: 90vw;
     }
 }

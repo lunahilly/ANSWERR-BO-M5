@@ -23,7 +23,7 @@ function kutphp(){
 
         }
     echo'
-    <h1>'.$titles.'</h1>
+    <h1 class="h1">'.$titles.'</h1>
     <div class="container">
           <img class="img" src="'.$image_paths.'" alt="SDG">
       <div class="text">
