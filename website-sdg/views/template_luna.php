@@ -28,7 +28,8 @@ function kutphp()
             <h1 class="SDG__h1">' . $titles . '</h1>
             <div class="SDG__container">
                 <img class="img" src="'.$image_paths.'" alt="SDG">
-                <h2 class="SDG__p">'.$subtexts.'</h2>
+                <div class="SDG__text">
+                <h2 class="SDG__h2">'.$subtexts.'</h2>
                 <p class="SDG__p">'.$info_texts.'</p>
             </div>
         </section>';

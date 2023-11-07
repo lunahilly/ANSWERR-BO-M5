@@ -76,10 +76,22 @@ nav>ul>li>a {
 
 .groot-sdg {
     height: 30vh;
+    overflow: hidden;
+}
+
+
+
+.groot-sdg_img:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+
 }
 
 .groot-sdg_img {
-    width: 30vh;
+    max-width: 30vh;
+    transition-duration: 0.5s;
+    overflow: hidden;
 }
 
 .main {
@@ -154,16 +166,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.sdg {
-    transition-duration: 1s;
-}
 
-.sdg:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    overflow: hidden;
-}
 
 footer {
     background: var(--nvvn);
@@ -323,6 +326,17 @@ p {
     align-items: center;
 }
 
+.SDG__text{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding-left: 20px;
+}
+
+.SDG__h2{
+    font-size: 25px;
+}
+
 .SDG__Luna{
     justify-content: center;
     align-items: center;
@@ -383,6 +397,11 @@ p {
     height: 30vw;
     margin: 2rem;
   }
+
+  .sdg__containerIMG{
+    width: 30vh;
+    overflow: visible;
+}
   
   .SDG-description{
     display: flex;

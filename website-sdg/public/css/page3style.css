@@ -7,10 +7,11 @@ height: 84.3vh;
     padding: 0 10rem;
     display: flex;
     gap: 3rem;
+    overflow: hidden;
   }
   
   .SDG img{
-    width: 30vw;
+    width: 20vw;
     height: 30vw;
     margin: 2rem;
   }
