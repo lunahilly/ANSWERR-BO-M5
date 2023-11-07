@@ -24,7 +24,7 @@ function kutphp(){
         }
         echo'
         <section class="SDG">
-            <img src="'.$image_paths.'" alt="SDG">
+            <img class="img" src="'.$image_paths.'" alt="SDG">
             <article class="SDG-description">
                 <h1>'.$titles.'</h1>
                 <p>'.$info_texts.'</p>

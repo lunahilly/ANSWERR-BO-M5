@@ -1,6 +1,6 @@
 <footer>
     <a href="https://nvvn.nl/">
-        <img src="/img/NVVN2.webp" alt="logo">
+        <img class="footer__img" src="/img/NVVN2.webp" alt="logo">
     </a>
     <div class= "logos">
         <a href="https://www.facebook.com/UNANetherlands">

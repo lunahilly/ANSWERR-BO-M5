@@ -21,9 +21,11 @@ html {
 
 body {
     max-width: 100vw;
-    height: 100%;
+    height: 100vh;
     background: var(--background);
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -169,8 +171,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 100vw;
     max-width: 100vw;
+    margin-top: auto;
 }
 
 footer>div {
@@ -193,6 +195,25 @@ footer>a>img {
     display: flex;
     height: 100%;
     align-items: center;
+}
+
+.NVVN__h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+
+.NVVN__p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.NVVN__h2{
+    font-size: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -284,17 +305,61 @@ p {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "img text";
+    align-items: center;
+    justify-content: space-between;
 }
 
-.img {
+.container > img{
     grid-area: img;
-    margin: 1rem;
-}
-
-img {
-    width: 46rem;
+    max-width: 60vw;
     border: 0.5rem solid #000;
 }
+
+.SDG{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.SDG__Luna{
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.SDG__container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.SDG__container >p{
+    width: 50vw;
+}
+
+.SDG__h1{
+    width: 90vw;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+
+.SDG >img {
+    grid-area: img;
+    margin: 1rem;
+    max-height: 50vh;
+}
+
+.img{
+    grid-area: img;
+    margin: 1rem;
+    max-height: 50vh;
+    width: auto;
+    border: 0.5rem solid #000;
+}
+
 
 .text {
     grid-area: text;
@@ -314,9 +379,15 @@ img {
         grid-template-areas: "img" "text";
     }
 
+
+
+
     .img {
         grid-area: img;
+        width: 40vw;
+        margin: 0;
     }
+
 
     img {
         width: 100%;
@@ -335,80 +406,63 @@ img {
 
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+
+
+@media screen and (max-width: 1000px) {
+
+    .container__p{
+        font-size: 16px;
+    }
+
+    .container__h2{
+        font-size: 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SDG__container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .SDG__p{
+        min-width: 80%;
+    }
+    .img{
+        width: 40vw;
+    }
 }
 
-h1 {
-	font-size: 2.5rem;
-    margin: 3.4rem;
+@media screen and (max-width: 500px) {
+
+    .container__p{
+        font-size: 16px;
+    }
+
+    .container__h2{
+        font-size: 16px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px   ;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .footer > a>img{
+        max-width: 20vw;
+    }
+    .footer__img{
+        max-width: 50vw;
+    }
+    .fa-brands{
+        font-size: 5px;
+    }
 }
-
-
-h2 {
-	font-size: 2.5rem;
-}
-
-p {
-	margin-bottom: 2rem;
-}
-
-.container1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Eerste kolom is 2fr, de tweede is 1fr */
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "text img"; /* De tekst staat eerst en dan de img */
-  }
-  
-  .img1 {
-    grid-area: img;
-    margin: 1rem;
-  }
-  
-  img {
-    max-width: 95%; /* Zorgt ervoor dat de img niet groter is dan de beschikbare ruimte */
-    max-height: 75rem; /* Hier kun je de maximale hoogte instellen op 300px */
-    border: 0.5rem solid #000;
-  }
-  
-  .text1 {
-    grid-area: text;
-    margin: 1rem;
-  }
-
-  @media screen and (max-width: 580px) {
-.container1 {  
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "img" "text";
-}
-
-.img1 { 
-	grid-area: img; 
-}
-
-img {
-	width: 100%;
-}
-
-.text1 { 
-	grid-area: text; 
-	margin: 0 0 0 1rem;
-}
-
-   }
-
-
-
-
-

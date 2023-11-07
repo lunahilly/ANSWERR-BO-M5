@@ -24,16 +24,13 @@ function kutphp()
 
         }
         echo '
-            <h1>' . $titles . '</h1>
-            <div class="container1">
-          <div class="img1">
-               <img src="' . $image_paths . '" alt="foto"/>
-          </div>
-          <div class="text1">
-              <p>' . $info_texts . '</p>
-        
-        
-          </div>';
+        <section class="SDG__Luna">
+            <h1 class="SDG__h1">' . $titles . '</h1>
+            <div class="SDG__container">
+                <img class="img" src="'.$image_paths.'" alt="SDG">
+                <p class="SDG__p">'.$info_texts.'</p>
+            </div>
+        </section>';
     } 
     else {
         echo "No SDG found with id: " . $sdg;

@@ -25,12 +25,10 @@ function kutphp(){
     echo'
     <h1>'.$titles.'</h1>
     <div class="container">
-      <div class="img">
-          <img src="'.$image_paths.'" alt="SDG">
-      </div>
+          <img class="img" src="'.$image_paths.'" alt="SDG">
       <div class="text">
-          <h2>'.$subtexts.'</h2>
-          <p>'.$info_texts.'</p>
+          <h2 class="container__h2">'.$subtexts.'</h2>
+          <p class="container__p">'.$info_texts.'</p>
       </div>';
 }
     else{
