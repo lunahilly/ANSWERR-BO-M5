@@ -25,13 +25,18 @@ function kutphp()
         }
         echo '
         <section class="SDG__Luna">
-            <h1 class="SDG__h1">' . $titles . '</h1>
+
             <div class="SDG__container">
-                <img class="img" src="'.$image_paths.'" alt="SDG">
+
                 <div class="SDG__text">
+                <h1 class="SDG__h1">' . $titles . '</h1>
                 <h2 class="SDG__h2">'.$subtexts.'</h2>
                 <p class="SDG__p">'.$info_texts.'</p>
+
+                </div>
+                <img class="img" src="'.$image_paths.'" alt="SDG">
             </div>
+
         </section>';
     } 
     else {

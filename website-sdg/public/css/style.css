@@ -290,6 +290,7 @@ footer>a>img {
 h1 {
     font-size: 3rem;
     margin: 1rem;
+
 }
 
 h2 {
@@ -353,12 +354,12 @@ p {
     width: 50vw;
 }
 
-.SDG__h1{
-    width: 90vw;
-    font-size: 40px;
-    text-align: center;
+.SDG__h1{   
+    font-size: 35px;
+    padding: none;
+    max-width: auto;
     margin: 0;
-    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
