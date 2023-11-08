@@ -428,7 +428,9 @@ p {
 
 
 @media screen and (max-width: 680px) {
-
+    .img{
+        margin-bottom: 40px;
+    }
 
     .container {
         display: grid;
@@ -445,8 +447,8 @@ p {
 
     .img {
         grid-area: img;
-        width: 40vw;
-        margin: 0;
+        height: 30vh;
+        width: auto;
     }
 
 
@@ -511,6 +513,10 @@ p {
         flex-direction: column;
     }
 
+    .SDG__text{
+        width: 90vw;
+    }
+
     .SDG__container{
         display: flex;
         flex-direction: column-reverse;
@@ -558,11 +564,23 @@ p {
     .fa-brands{
         font-size: 5px;
     }
+
+    .SDG__text{
+        width: 90vw;
+    }
+
+    .img{
+        height: 30vh;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .SDG-description{
         width: 90vw;
+    }
+    .SDG__text{
+        width: 80vw;
     }
 }
 
